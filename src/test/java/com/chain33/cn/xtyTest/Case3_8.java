@@ -1,16 +1,11 @@
 package com.chain33.cn.xtyTest;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 
-import org.junit.Assert;
 import org.junit.Test;
-
 import cn.chain33.javasdk.client.Account;
 import cn.chain33.javasdk.client.RpcClient;
 import cn.chain33.javasdk.model.AccountInfo;
-import cn.chain33.javasdk.model.decode.DecodeRawTransaction;
 import cn.chain33.javasdk.utils.AesUtil;
 import cn.chain33.javasdk.utils.HexUtil;
 import cn.chain33.javasdk.utils.TransactionUtil;
@@ -37,8 +32,10 @@ public class Case3_8 {
 		Account account = new Account();
 		AccountInfo accountInfo = account.newAccountLocal();
 		String privateKey = accountInfo.getPrivateKey();
+		String address = accountInfo.getAddress();
 		
 		System.out.println("私钥明文:" + privateKey);
+		System.out.println("用户地址：" + address);
 		
 		System.out.println("==================AES加密==========================");
 		// 生成AES加密KEY
