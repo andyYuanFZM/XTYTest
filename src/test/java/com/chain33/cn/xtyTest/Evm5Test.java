@@ -26,7 +26,7 @@ public class Evm5Test {
 
 	// 区块链IP
 //	String ip = "121.36.222.205";
-	String ip = "121.36.229.249";
+	String ip = "172.22.17.194";
 	// 区块链服务端口
 	int port = 8801;
 	RpcClient client = new RpcClient(ip, port);

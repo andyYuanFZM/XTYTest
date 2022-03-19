@@ -11,7 +11,7 @@ import cn.chain33.javasdk.utils.TransactionUtil;
 
 public class CommUtil {
 	
-	public static final String ip = "121.36.222.205";
+	public static final String ip = "172.22.17.194";
 	
 //	public static final String ip1 = "132.232.76.48";
 //	public static final String ip2 = "132.232.87.45";
@@ -24,7 +24,7 @@ public class CommUtil {
 	public static final String ip4 = "172.27.0.5";
 	
 		
-	public static final int port = 8801;
+	public static final int port = 8901;
 	
 	
 	/**

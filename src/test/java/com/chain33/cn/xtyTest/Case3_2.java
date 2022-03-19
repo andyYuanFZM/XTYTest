@@ -114,7 +114,7 @@ public class Case3_2 {
 	public void case3_2_3() throws Exception {
     	
 		System.out.println("=========================生成账户信息开始===========================");
-		String accountId = "testAccount1131";
+		String accountId = "testAccount11312";
 
 		AccountInfo accountInfo = account.newAccountLocal();
 		
@@ -155,7 +155,7 @@ public class Case3_2 {
    	public void case3_2_4() throws Exception {
     	   
    		System.out.println("=========================初始创建开始===========================");
-   		String accountId = "testAccount141";
+   		String accountId = "testAccount1410111";
 
    		AccountInfo accountInfo = account.newAccountLocal();
 //   		System.out.println("privateKey is:" + accountInfo.getPrivateKey());
