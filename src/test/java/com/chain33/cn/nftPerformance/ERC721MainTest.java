@@ -193,17 +193,18 @@ public class ERC721MainTest {
 			        try {
 			        	// 发行NFT
 				        byte[] initNFT = EvmUtil.encodeParameter(abi, "mint", useraAddress, tokenId, "http://www.163.com");
+				        callContract(grpcClient1, initNFT, contractAddress, managerPrivateKey, fee);
 				        
-				        switch(i%4){
-				    	case 0:
-				    		callContract(grpcClient1, initNFT, contractAddress, managerPrivateKey, fee);
-				    	case 1:
-				    		callContract(grpcClient2, initNFT, contractAddress, managerPrivateKey, fee);
-				    	case 2:
-				    		callContract(grpcClient3, initNFT, contractAddress, managerPrivateKey, fee);
-				    	case 3:
-				    		callContract(grpcClient4, initNFT, contractAddress, managerPrivateKey, fee);
-				        }
+//				        switch(i%4){
+//				    	case 0:
+//				    		callContract(grpcClient1, initNFT, contractAddress, managerPrivateKey, fee);
+//				    	case 1:
+//				    		callContract(grpcClient2, initNFT, contractAddress, managerPrivateKey, fee);
+//				    	case 2:
+//				    		callContract(grpcClient3, initNFT, contractAddress, managerPrivateKey, fee);
+//				    	case 3:
+//				    		callContract(grpcClient4, initNFT, contractAddress, managerPrivateKey, fee);
+//				        }
 				        
 //				        // NFT转账
 //				        byte[] transferNFT = EvmUtil.encodeParameter(abi,"safeTransferFrom", useraAddress, "1CbEVT9RnM5oZhWMj4fxUrJX94VtRotzvs", 1);
